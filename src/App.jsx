@@ -6,6 +6,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import Tasks from "./Components/Tasks/Tasks";
 import Resolved from "./Components/Resolved/Resolved";
 import { ToastContainer } from 'react-toastify';
+import Footer from "./Components/Footer/Footer";
 
 const customerPromised = fetch("/data.json").then((res) => res.json());
 
@@ -39,6 +40,9 @@ function App() {
         <Resolved resolved={resolved}></Resolved>
           </div>
       </div>
+
+
+      <Footer></Footer>
     </>
   );
 }
