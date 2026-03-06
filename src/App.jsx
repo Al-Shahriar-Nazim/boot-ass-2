@@ -1,12 +1,15 @@
-import { Suspense } from "react";
+import { Suspense, useState } from "react";
 import "./App.css";
 import Customers from "./Components/Customers/Customers";
 import Dashbord from "./Components/DashBoard/Dashbord";
 import Navbar from "./Components/Navbar/Navbar";
+import Tasks from "./Components/Tasks/Tasks";
 
 const customerPromised = fetch("/data.json").then((res) => res.json());
 
 function App() {
+  const [selectedTicket,setSelectedTikcet] = useState([])
+  // console.log(selectedTicket)
   return (
     <>
       <Navbar></Navbar>
@@ -17,11 +20,11 @@ function App() {
           <Suspense
             fallback={<span className="loading loading-bars loading-xl"></span>}
           >
-            <Customers customerPromised={customerPromised}></Customers>
+            <Customers selectedTicket={selectedTicket}  setSelectedTikcet={setSelectedTikcet} customerPromised={customerPromised}></Customers>
           </Suspense>
         </div>
         <div className="w-full md:w-[20%]">
-          right
+        <Tasks selectedTicket={selectedTicket}></Tasks>
           </div>
       </div>
     </>
