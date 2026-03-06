@@ -4,11 +4,14 @@ import Customers from "./Components/Customers/Customers";
 import Dashbord from "./Components/DashBoard/Dashbord";
 import Navbar from "./Components/Navbar/Navbar";
 import Tasks from "./Components/Tasks/Tasks";
+import Resolved from "./Components/Resolved/Resolved";
 
 const customerPromised = fetch("/data.json").then((res) => res.json());
 
 function App() {
   const [selectedTicket,setSelectedTikcet] = useState([])
+  const [ resolved, setResolved] = useState([])
+  console.log(resolved)
   // console.log(selectedTicket)
   return (
     <>
@@ -24,7 +27,9 @@ function App() {
           </Suspense>
         </div>
         <div className="w-full md:w-[20%]">
-        <Tasks selectedTicket={selectedTicket}></Tasks>
+        <Tasks resolved={resolved} setResolved={setResolved} selectedTicket={selectedTicket}></Tasks>
+        <div className="my-5"><hr className="text-gray-400"></hr></div>
+        <Resolved resolved={resolved}></Resolved>
           </div>
       </div>
     </>
