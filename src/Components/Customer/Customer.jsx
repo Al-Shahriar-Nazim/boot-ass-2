@@ -6,20 +6,20 @@ const Customer = ({ customer, setSelectedTikcet, selectedTicket }) => {
   const [toggle, setToggle] = useState(true);
   const { title, description, priority, createdAt, custom, id } = customer;
 
-  const getStatusColor = (status) => {
-    if (status === "In Progress") {
-      return "bg-yellow-200 text-yellow-700  border-yellow-400";
-    }
-    if (status === "open") {
-      return "bg-green-200 text-green-700 border-green-400";
-    }
-  };
+  // const getStatusColor = (status) => {
+  //   if (status === "In Progress") {
+  //     return "bg-yellow-200 text-yellow-700  border-yellow-400";
+  //   }
+  //   if (status === "open") {
+  //     return "bg-green-200 text-green-700 border-green-400";
+  //   }
+  // };
   const handleSelected = (tikcetData) => {
     setSelectedTikcet([...selectedTicket, tikcetData]);
     // console.log("hello")
   };
   return (
-    <div
+    <button
       onClick={() => {
         handleSelected(customer);
       }}
@@ -32,15 +32,23 @@ const Customer = ({ customer, setSelectedTikcet, selectedTicket }) => {
            bg-green-200 p-1 rounded-2xl w-[150px] md:w-[120px]  ml-2">Open</p> */}
             {/* <p>Open</p> */}
             {toggle ? (
-            <button onClick={()=>setToggle(!toggle)}
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setToggle(!toggle);
+                }}
                 className="border-1 h-[30px] flex gap-1 items-center justify-center
            bg-green-200 p-1 rounded-2xl w-[150px] md:w-[120px]  ml-2"
-              >Open</button>
+              >
+                Open
+              </button>
             ) : (
               <button
                 className="border-1 h-[30px] flex gap-1 items-center justify-center
            bg-yellow-200 p-1 rounded-2xl w-[150px] md:w-[120px]  ml-2"
-              >In progess</button>
+              >
+                In progess
+              </button>
             )}
           </div>
         </div>
@@ -58,7 +66,7 @@ const Customer = ({ customer, setSelectedTikcet, selectedTicket }) => {
           </div>
         </div>
       </div>
-    </div>
+    </button>
   );
 };
 

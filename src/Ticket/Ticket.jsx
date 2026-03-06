@@ -5,6 +5,7 @@ const Ticket = ({ ticket,resolved,setResolved,removeTicket}) => {
   const handleTask=(ticketData)=>{
     // console.log(ticket)
     setResolved([...resolved,ticketData])
+    removeTicket(ticket.id);
   }
   const handleRemove =()=>{
     // console.log("click remove")
