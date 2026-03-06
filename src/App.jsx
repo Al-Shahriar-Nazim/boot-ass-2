@@ -22,7 +22,7 @@ function App() {
   return (
     <>
       <Navbar></Navbar>
-      <Dashbord selectedTicket={selectedTicket}></Dashbord>
+      <Dashbord resolved={resolved} selectedTicket={selectedTicket}></Dashbord>
 
       <div className="container mx-auto p-4 flex flex-col md:flex-row gap-5">
         <div className="w-full md:w-[80%]">
