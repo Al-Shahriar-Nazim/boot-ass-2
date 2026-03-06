@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "title": "Login page not loading",
+    "description": "Customer unable to access login page. It shows a blank screen.",
+    "custom": "John Smith",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2026-03-01T09:15:00Z"
+  },
+  {
+    "id": 2,
+    "title": "Payment failed but amount deducted",
+    "description": "Customer reports payment was deducted but order not confirmed.",
+    "custom": "Sarah Johnson",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "2026-03-01T10:30:00Z"
+  },
+  {
+    "id": 3,
+    "title": "Password reset email not received",
+    "description": "User requested password reset but did not receive any email.",
+    "custom": "Michael Brown",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2026-03-02T08:45:00Z"
+  },
+  {
+    "id": 4,
+    "title": "Error 500 on dashboard",
+    "description": "Internal server error appears when accessing dashboard.",
+    "custom": "Emily Davis",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "2026-03-02T11:20:00Z"
+  },
+  {
+    "id": 5,
+    "title": "Profile picture not updating",
+    "description": "User cannot update profile image; upload fails.",
+    "custom": "David Wilson",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2026-03-02T14:05:00Z"
+  },
+  {
+    "id": 6,
+    "title": "Order status incorrect",
+    "description": "Order marked as delivered but customer did not receive it.",
+    "custom": "Sophia Martinez",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2026-03-03T07:55:00Z"
+  },
+  {
+    "id": 7,
+    "title": "App crashes on startup",
+    "description": "Mobile app crashes immediately after launching.",
+    "custom": "James Anderson",
+    "priority": "Critical",
+    "status": "In Progress",
+    "createdAt": "2026-03-03T09:40:00Z"
+  },
+  {
+    "id": 8,
+    "title": "Unable to download invoice",
+    "description": "Customer unable to download invoice PDF from account page.",
+    "custom": "Olivia Thomas",
+    "priority": "Medium",
+    "status": "Resolved",
+    "createdAt": "2026-03-03T12:10:00Z"
+  },
+  {
+    "id": 9,
+    "title": "Search functionality slow",
+    "description": "Search results take too long to load.",
+    "custom": "Daniel Taylor",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2026-03-04T08:25:00Z"
+  },
+  {
+    "id": 10,
+    "title": "Discount code not working",
+    "description": "Promo code shows invalid even though it is active.",
+    "custom": "Isabella Moore",
+    "priority": "Medium",
+    "status": "In Progress",
+    "createdAt": "2026-03-04T10:50:00Z"
+  },
+  {
+    "id": 11,
+    "title": "Notification emails delayed",
+    "description": "Customers receiving notification emails several hours late.",
+    "custom": "William Jackson",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2026-03-04T13:15:00Z"
+  },
+  {
+    "id": 12,
+    "title": "Account locked unexpectedly",
+    "description": "User account locked without any suspicious activity.",
+    "custom": "Ava White",
+    "priority": "High",
+    "status": "Resolved",
+    "createdAt": "2026-03-04T15:30:00Z"
+  },
+  {
+    "id": 13,
+    "title": "Language setting not saving",
+    "description": "Selected language resets after page refresh.",
+    "custom": "Ethan Harris",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2026-03-05T07:20:00Z"
+  },
+  {
+    "id": 14,
+    "title": "Two-factor authentication issue",
+    "description": "OTP code not accepted during login.",
+    "custom": "Mia Clark",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "2026-03-05T09:05:00Z"
+  },
+  {
+    "id": 15,
+    "title": "Data export not generating file",
+    "description": "Export button does not generate CSV file.",
+    "custom": "Benjamin Lewis",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2026-03-05T11:45:00Z"
+  }
+]

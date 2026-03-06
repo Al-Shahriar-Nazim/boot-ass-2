@@ -4,7 +4,7 @@ import vectorOne from "../../assets/vector1.png";
 
 const Dashbord = () => {
   return (
-    <div className="container mx-auto p-4 my-10 grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div className="container mx-auto p-4 md:my-10 grid grid-cols-1 md:grid-cols-2 gap-8">
       <div className="h-40 bg-gradient-to-r relative from-[#7B3FE4] to-[#A35EF0] hover:brightness-110 rounded-xl">
         <img src={vectorOne} alt="" />
         <div className="absolute -mt-50 text-white w-full text-center">
