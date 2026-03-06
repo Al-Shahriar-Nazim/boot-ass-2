@@ -14,7 +14,7 @@
     "description": "Customer reports payment was deducted but order not confirmed.",
     "custom": "Sarah Johnson",
     "priority": "High",
-    "status": "In Progress",
+    "status": "Open",
     "createdAt": "2026-03-01T10:30:00Z"
   },
   {
@@ -32,7 +32,7 @@
     "description": "Internal server error appears when accessing dashboard.",
     "custom": "Emily Davis",
     "priority": "High",
-    "status": "In Progress",
+    "status": "Open",
     "createdAt": "2026-03-02T11:20:00Z"
   },
   {
@@ -59,7 +59,7 @@
     "description": "Mobile app crashes immediately after launching.",
     "custom": "James Anderson",
     "priority": "Critical",
-    "status": "In Progress",
+    "status": "Open",
     "createdAt": "2026-03-03T09:40:00Z"
   },
   {
@@ -68,7 +68,7 @@
     "description": "Customer unable to download invoice PDF from account page.",
     "custom": "Olivia Thomas",
     "priority": "Medium",
-    "status": "Resolved",
+    "status": "Open",
     "createdAt": "2026-03-03T12:10:00Z"
   },
   {
@@ -86,7 +86,7 @@
     "description": "Promo code shows invalid even though it is active.",
     "custom": "Isabella Moore",
     "priority": "Medium",
-    "status": "In Progress",
+    "status": "Open",
     "createdAt": "2026-03-04T10:50:00Z"
   },
   {
@@ -104,7 +104,7 @@
     "description": "User account locked without any suspicious activity.",
     "custom": "Ava White",
     "priority": "High",
-    "status": "Resolved",
+    "status": "Open",
     "createdAt": "2026-03-04T15:30:00Z"
   },
   {
@@ -122,7 +122,7 @@
     "description": "OTP code not accepted during login.",
     "custom": "Mia Clark",
     "priority": "High",
-    "status": "In Progress",
+    "status": "Open",
     "createdAt": "2026-03-05T09:05:00Z"
   },
   {

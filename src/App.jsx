@@ -5,6 +5,7 @@ import Dashbord from "./Components/DashBoard/Dashbord";
 import Navbar from "./Components/Navbar/Navbar";
 import Tasks from "./Components/Tasks/Tasks";
 import Resolved from "./Components/Resolved/Resolved";
+import { ToastContainer } from 'react-toastify';
 
 const customerPromised = fetch("/data.json").then((res) => res.json());
 
