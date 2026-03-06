@@ -11,8 +11,14 @@ const customerPromised = fetch("/data.json").then((res) => res.json());
 function App() {
   const [selectedTicket,setSelectedTikcet] = useState([])
   const [ resolved, setResolved] = useState([])
-  console.log(resolved)
+  // console.log(resolved)
   // console.log(selectedTicket)
+  const removeTicket =(t)=>{
+    // console.log(t)
+    const filterData = selectedTicket.filter(tick => tick.id !== t.id)
+    // console.log(filterData)
+    setSelectedTikcet(filterData)
+  }
   return (
     <>
       <Navbar></Navbar>
@@ -27,7 +33,7 @@ function App() {
           </Suspense>
         </div>
         <div className="w-full md:w-[20%]">
-        <Tasks resolved={resolved} setResolved={setResolved} selectedTicket={selectedTicket}></Tasks>
+        <Tasks removeTicket={removeTicket} resolved={resolved} setResolved={setResolved} selectedTicket={selectedTicket}></Tasks>
         <div className="my-5"><hr className="text-gray-400"></hr></div>
         <Resolved resolved={resolved}></Resolved>
           </div>

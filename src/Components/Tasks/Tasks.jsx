@@ -1,7 +1,7 @@
 import React from "react";
 import Ticket from "../../Ticket/Ticket";
 
-const Tasks = ({ selectedTicket,setResolved,resolved }) => {
+const Tasks = ({ selectedTicket,setResolved,resolved,removeTicket }) => {
 //   console.log(selectedTicket);
   return (
     <div>
@@ -9,7 +9,7 @@ const Tasks = ({ selectedTicket,setResolved,resolved }) => {
 
       <div>
         {selectedTicket.map((ticket) => (
-          <Ticket resolved={resolved} setResolved={setResolved} key={ticket.id} ticket={ticket}></Ticket>
+          <Ticket removeTicket={removeTicket} resolved={resolved} setResolved={setResolved} key={ticket.id} ticket={ticket}></Ticket>
         ))}
       </div>
     </div>
